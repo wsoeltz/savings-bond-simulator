@@ -5,7 +5,7 @@
 	<title>Savings Bond Simulator</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container mb-5">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 pt-4">
 				<h1 class="text-center mb-4">💵Savings Bond Simulator💵</h1>
@@ -18,6 +18,7 @@
 					<li>Input your current tax rate and your future tax rate.</li>
 					<li>Press GO and find out if you should cash or hold that bond!</li>
 				</ol>
+				<p><small>Disclaimer: This tool gives a very rough ball park based on the current value and interest rates. It is impossible to determine the exact final value of an EE savings bond due to some of the bonds having a variable interest rate that changes every 6 months. It also does not take into account things like inflation, other debts or investments you have, etc. Do not use this as a primary means of making financial decisions.</small></p>
 				<label for="input_data"><strong>Bond Data</strong></label>
 				<textarea rows="7" class="form-control mb-4" name="input_data" id="input_data"></textarea>
 				<div class="row">
@@ -36,8 +37,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="row justify-content-center">
-			<div id="table_container" class="col-lg-8 pt-4">
+	</div>
+	<div class="container-fluid mt-5">
+		<div class="row">
+			<div id="table_container" class="col">
 			</div>
 		</div>
 	</div>

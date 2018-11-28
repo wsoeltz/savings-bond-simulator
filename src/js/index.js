@@ -11,18 +11,28 @@ const controller = () => {
 	// 2) Give input to model and get data object
 	const data = model.bondStringToObj(input.data);
 
-	console.log(data);
+	if (data === null) {
+		alert('The data was copied incorrectly. Please make sure to select everything from the first "Serial #" to the last "Note".');
+		view.clearTextInput();
+	} else {
 
-	// 3) Update Object with final values
+		data.forEach(cur =>  {
+			// 3) Update Object with final values
+			cur.calcMaturityVal();
 
+			// 4) Determine current and future tax values
+			cur.calcCurrTaxedValue(input.curTax);
+			cur.calcFinalTaxedValue(input.futureTax);
 
-	// 4) Determine current and future tax values
+			// 5) Determine if bond should be cashed or held
+			cur.cashOrHold();
+		});
 
+		// 6) Print the table to the screen
+		view.buildTable(data);
 
-	// 5) Determine if bond should be cashed or held
+	}
 
-
-	// 6) Print the table to the screen
 
 
 };
