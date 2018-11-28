@@ -5,35 +5,42 @@
 	<title>Savings Bond Simulator</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container mb-5">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 pt-4">
-				<h1 class="text-center mb-4">🤑Savings Bond Simulator🤑🤑</h1>
+				<h1 class="text-center mb-4">💵Savings Bond Simulator💵</h1>
 				<h5 class="text-center">See if you should cash those savings bonds now or hold them until maturity.</h5>
 				<ol class="mb-4">
-					<li>First, input all of your bonds through the US Treasury Department <a href="https://www.treasurydirect.gov/BC/SBCPrice">here</a>.</li>
+					<li>First, input all of your bonds through the US Treasury Department <a href="https://www.treasurydirect.gov/BC/SBCPrice" target="_blank" title="https://www.treasurydirect.gov/BC/SBCPrice">here</a>.</li>
 					<li>Then click the 'View' button on that page.</li>
 					<li>On the new page, select from the first "Serial #" all the way to the last "Note" and copy it.</li>
 					<li>Paste the information in the below textarea.</li>
 					<li>Input your current tax rate and your future tax rate.</li>
 					<li>Press GO and find out if you should cash or hold that bond!</li>
 				</ol>
-				<label><strong>Bond Data</strong></label>
-				<textarea rows="7" class="form-control mb-4" id="input__data"></textarea>
+				<p><small>Disclaimer: This tool gives a very rough ball park based on the current value and interest rates. It is impossible to determine the exact final value of an EE savings bond due to some of the bonds having a variable interest rate that changes every 6 months. It also does not take into account things like inflation, other debts or investments you have, etc. Do not use this as a primary means of making financial decisions.</small></p>
+				<label for="input_data"><strong>Bond Data</strong></label>
+				<textarea rows="7" class="form-control mb-4" name="input_data" id="input_data"></textarea>
 				<div class="row">
 					<div class="col">
-						<label><strong>Current Tax Rate</strong></label>
-						<input type="number" name="cur-tax-rate" id="cur-tax-rate" class="form-control">
+						<label for="cur_tax_rate"><strong>Current Tax Rate</strong></label>
+						<input type="number" name="cur_tax_rate" id="cur_tax_rate" class="form-control">
 					</div>
 					<div class="col">
-						<label><strong>Future Tax Rate</strong></label>
-						<input type="number" name="future-tax-rate" id="future-tax-rate" class="form-control">
+						<label for="future_tax_rate"><strong>Future Tax Rate</strong></label>
+						<input type="number" name="future_tax_rate" id="future_tax_rate" class="form-control">
 					</div>
 					<div class="col">
 						<label><strong></strong></label>
-						<button class="btn btn-primary btn-lg btn-block">Go</button>
+						<button id="submit_btn" class="btn btn-primary btn-lg btn-block">Go</button>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mt-5">
+		<div class="row">
+			<div id="table_container" class="col">
 			</div>
 		</div>
 	</div>
