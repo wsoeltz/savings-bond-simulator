@@ -5,6 +5,37 @@
 	<title>Savings Bond Simulator</title>
 </head>
 <body>
-
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 pt-4">
+				<h1 class="text-center mb-4">🤑Savings Bond Simulator🤑🤑</h1>
+				<h5 class="text-center">See if you should cash those savings bonds now or hold them until maturity.</h5>
+				<ol class="mb-4">
+					<li>First, input all of your bonds through the US Treasury Department <a href="https://www.treasurydirect.gov/BC/SBCPrice">here</a>.</li>
+					<li>Then click the 'View' button on that page.</li>
+					<li>On the new page, select from the first "Serial #" all the way to the last "Note" and copy it.</li>
+					<li>Paste the information in the below textarea.</li>
+					<li>Input your current tax rate and your future tax rate.</li>
+					<li>Press GO and find out if you should cash or hold that bond!</li>
+				</ol>
+				<label><strong>Bond Data</strong></label>
+				<textarea rows="7" class="form-control mb-4" id="input__data"></textarea>
+				<div class="row">
+					<div class="col">
+						<label><strong>Current Tax Rate</strong></label>
+						<input type="number" name="cur-tax-rate" id="cur-tax-rate" class="form-control">
+					</div>
+					<div class="col">
+						<label><strong>Future Tax Rate</strong></label>
+						<input type="number" name="future-tax-rate" id="future-tax-rate" class="form-control">
+					</div>
+					<div class="col">
+						<label><strong></strong></label>
+						<button class="btn btn-primary btn-lg btn-block">Go</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>
