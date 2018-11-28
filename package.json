@@ -1,0 +1,19 @@
+{
+  "name": "savings-bond-simulator",
+  "version": "1.0.0",
+  "description": "See if you should cash those savings bonds or hold them until maturity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsoeltz/savings-bond-simulator.git"
+  },
+  "author": "Kyle Soeltz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsoeltz/savings-bond-simulator/issues"
+  },
+  "homepage": "https://github.com/wsoeltz/savings-bond-simulator#readme"
+}
