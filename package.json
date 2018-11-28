@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/wsoeltz/savings-bond-simulator/issues"
   },
-  "homepage": "https://github.com/wsoeltz/savings-bond-simulator#readme"
+  "homepage": "https://github.com/wsoeltz/savings-bond-simulator#readme",
+  "devDependencies": {
+    "webpack": "^4.26.1"
+  }
 }
