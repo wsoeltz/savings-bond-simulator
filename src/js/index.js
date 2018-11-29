@@ -31,6 +31,18 @@ const controller = () => {
 		// 6) Print the table to the screen
 		view.buildTable(data);
 
+
+		// Console.log the total if all recommendations are followed
+		/*let total = data.reduce((result, cur) => {
+			if (cur.toCashOrHold === 'Cash It') {
+				return result + cur.currTaxedValue;
+			} else {
+				return result + cur.finalTaxedValue;
+			}
+		}, 0);
+
+		console.log(total);*/
+
 	}
 
 
